@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.178c892e.css",
+    "main.js": "/static/js/main.35de12f8.js",
+    "static/js/787.1f9e61ad.chunk.js": "/static/js/787.1f9e61ad.chunk.js",
+    "static/media/bg.png": "/static/media/bg.176203be489485dd09b3.png",
+    "static/media/Pema Lingpa 2.png": "/static/media/Pema Lingpa 2.f2408019152ff1f83939.png",
+    "static/media/Kenchosum-Lhakhang.png": "/static/media/Kenchosum-Lhakhang.dd8596d2bb79525e1e74.png",
+    "index.html": "/index.html",
+    "main.178c892e.css.map": "/static/css/main.178c892e.css.map",
+    "main.35de12f8.js.map": "/static/js/main.35de12f8.js.map",
+    "787.1f9e61ad.chunk.js.map": "/static/js/787.1f9e61ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.178c892e.css",
+    "static/js/main.35de12f8.js"
+  ]
+}
