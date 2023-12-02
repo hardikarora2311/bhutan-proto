@@ -32,7 +32,7 @@ const Legacy = ({menuHandle, setMenuHandle}) => {
         <div className="comic-main">
             <div className="image-block-wrapper">
             <div className="comic-block image-block">
-                <div className="comic image"><img src={img1} alt='image 1'/></div>
+                <div className="comic image"><img src={img1} alt='legacy'/></div>
             </div>
             <div className="comic-block image-block">
                 <div className="comic image">IMG</div>
