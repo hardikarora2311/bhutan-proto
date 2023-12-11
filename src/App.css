@@ -148,7 +148,7 @@ body, html{
     /* top: 40%; */
     /* left: 108%; */
   height: 110px;
-  margin-left: 6em;
+  /* margin-left: 6em; */
   padding: 25px 40px;
   cursor: pointer;
   /* z-index: 100; */
@@ -269,18 +269,36 @@ background-color: white;
   color: white;
 }
 .home-icon{
-  background-color: black;
+  background-color: #2B455D;
   border: none;
   box-shadow: none;
   padding: 0;
-  border-radius: 20px;
   height: 80px;
-    padding: 25px 40px;
-    cursor: pointer;
-    transform: translateY(301px);
+  margin-left: 6em;
+  padding: 25px 40px;
+  cursor: pointer;
+  box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.45);
+    /* transform: translateY(301px); */
+    transform: translate(-95px, 301px);
     z-index: 999;
   }
-
+  .home-icon::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url("./assets/texture-2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  .home-icon-red{
+    background-color: #6A1F11;
+  }
   .v-hidden{
     visibility: hidden;
   }
