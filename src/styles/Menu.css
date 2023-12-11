@@ -5,16 +5,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 689px;
-    transform: translate(86px, -75px);
+    /* transform: translate(86px, -75px); */
+    transform: translate(146px, -42px);
+    position: absolute;
 
 }
 
 .menu-main li{
-    background-color: white;
-    border: 2px solid black;
+    background-color: #CD5A33;
+    /* border: 2px solid black; */
     border-radius: 20px;
     width: fit-content;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     text-transform: uppercase;
     padding: 40px;
     font-family: 'Hammersmith One', sans-serif;
@@ -26,4 +28,22 @@
     margin-top: 0.5em;
     display: flex;
     cursor: pointer;
+    position: relative;
+    color: #FFD9BC;
+  box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.45);
 }
+
+.menu-main li::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url("../assets/texture-1.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
