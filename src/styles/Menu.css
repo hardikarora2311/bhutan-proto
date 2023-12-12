@@ -4,17 +4,21 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    width: 689px;
+    width: 704px;
     /* transform: translate(86px, -75px); */
-    transform: translate(146px, -42px);
+    transform: translate(146px, -74px);
     position: absolute;
+    align-items: flex-end;
 
+}
+.home-new-pos{
+    transform: translate(6px, 186px);
 }
 
 .menu-main li{
     background-color: #CD5A33;
     /* border: 2px solid black; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
     width: fit-content;
     /* font-weight: bolder; */
     text-transform: uppercase;

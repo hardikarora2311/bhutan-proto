@@ -42,7 +42,7 @@ const menuReset = () => {
                 </div>
             </div> */}
             <div className={charActivate? "char-section": "char-section no-char"}>
-                <button className= {menuHandle===-1? "home-icon animate__animated animate__fadeIn animate__delay-4s":(menuHandle ===0)?"home-icon home-icon-red animate__animated animate__fadeIn animate__delay-4s":(menuHandle %1 ===0)?"home-icon home-icon-red animate__animated animate__fadeIn animate__delay-4s":(menuHandle %1 !==0)?"home-icon animate__animated animate__fadeIn animate__delay-4s": "home-icon no-char"} onClick={menuReset}><img src={home} alt="Main Menu" /></button>
+                <button className= {menuHandle===-1? "home-icon animate__animated animate__fadeIn animate__delay-4s":(menuHandle ===0)?"home-icon home-icon-red home-new-pos animate__animated animate__fadeIn animate__delay-4s":(menuHandle %1 ===0)?"home-icon home-icon-red animate__animated animate__fadeIn animate__delay-4s":(menuHandle %1 !==0)?"home-icon animate__animated animate__fadeIn animate__delay-4s": "home-icon no-char"} onClick={menuReset}><img src={home} alt="Main Menu" /></button>
                 <Intro menuHandle={menuHandle}/>
                 <Menu menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
                 <History menuHandle={menuHandle}/>
