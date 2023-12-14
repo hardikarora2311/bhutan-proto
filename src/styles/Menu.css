@@ -34,6 +34,7 @@
     cursor: pointer;
     position: relative;
     color: #FFD9BC;
+    overflow: hidden;
   box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.45);
 }
 
@@ -43,11 +44,17 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 230%;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.2;
     background-image: url("../assets/texture-1.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
+  animation: texture 8s linear infinite;
+  }
+
+  @keyframes texture {
+    from {background-position: -300px 0;}
+  to {background-position: 0 0;}
   }
