@@ -1,7 +1,7 @@
 import './App.css';
 import Character from './components/Character';
 import image1 from "./assets/Pema Lingpa 2.png";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 
 function App() {
