@@ -16,15 +16,7 @@ const PageCover = React.forwardRef((props, ref) => {
     );
   });
   
-  const Page = React.forwardRef((props, ref) => {
-    return (
-      <div className="page" ref={ref}>
-        <h1>Page Header</h1>
-        <p>{props.children}</p>
-        <p>{props.number}</p>
-      </div>
-    );
-  });
+
 
 const Revelations = ({ menuHandle, setMenuHandle }) => {
   if (menuHandle === 3) {
