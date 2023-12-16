@@ -1,8 +1,30 @@
 import React from "react";
 import comic1 from "../assets/Naring Drag Cover Image.png";
 import comic2 from "../assets/Burning Lake Cover Image.png";
+import page1 from "../assets/A3_6.png";
+import page2 from "../assets/A3_5.png";
 import HTMLFlipBook from "react-pageflip";
 
+
+const PageCover = React.forwardRef((props, ref) => {
+    return (
+      <div className="cover" ref={ref} data-density="hard">
+        <div>
+          <div className="cover-image">{props.children}</div>
+        </div>
+      </div>
+    );
+  });
+  
+  const Page = React.forwardRef((props, ref) => {
+    return (
+      <div className="page" ref={ref}>
+        <h1>Page Header</h1>
+        <p>{props.children}</p>
+        <p>{props.number}</p>
+      </div>
+    );
+  });
 
 const Revelations = ({ menuHandle, setMenuHandle }) => {
   if (menuHandle === 3) {
@@ -90,10 +112,6 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
             className="comic-main-cover"
             onClick={() => setMenuHandle(3.11)}
           />
-          <div className="next-comic" onClick={() => setMenuHandle(3.2)}>
-            REVELATIONS AT <br></br>
-            <span>BURNING LAKE</span>
-          </div>
         </div>
       </div>
     );
@@ -102,14 +120,32 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
   if (menuHandle === 3.11) {
     return (
       <div className="comic-book-wrapper">
+        <button className="back-btn" onClick={() => setMenuHandle(3.1)}></button>
         <div className="comic-book">
-            <HTMLFlipBook width={300} height={500}>
-                <div className="demoPage"><img src={comic1} alt="" style={{width: "100%"}}/></div>
-                <div className="demoPage"><img src={comic2} alt="" style={{width: "100%"}}/></div>
-                <div className="demoPage"><img src={comic1} alt="" style={{width: "100%"}}/></div>
-                <div className="demoPage"><img src={comic2} alt="" style={{width: "100%"}}/></div>
-            </HTMLFlipBook>
+        <HTMLFlipBook
+          width={337}
+          height={473}
+          minWidth={315}
+          maxWidth={1000}
+          minHeight={420}
+          maxHeight={1350}
+          showCover={false}
+          flippingTime={1000}
+        //   style={{ margin: "0 auto" }}
+          maxShadowOpacity={0.5}
+          className="album-web"
+        >
+          <PageCover><img src={comic1} alt=""/> </PageCover>
+          <PageCover><img src={page2} alt=""/></PageCover>
+          <PageCover><img src={page1} alt=""/></PageCover>
+          <PageCover><img src={page2} alt=""/></PageCover>
+          <PageCover>see you</PageCover>
+        </HTMLFlipBook>
         </div>
+        <div className="next-comic" onClick={() => setMenuHandle(3.2)}>
+            REVELATIONS AT <br></br>
+            <span>BURNING LAKE</span>
+          </div>
       </div>
     );
   }
@@ -145,12 +181,42 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
           </p>
         </div>
         <div className="comic-main">
-          <img src={comic2} alt="" className="comic-main-cover" />
-          <div className="next-comic" onClick={() => setMenuHandle(3.1)}>
+          <img src={comic2} alt="" className="comic-main-cover" onClick={() => setMenuHandle(3.21)} />
+        </div>
+      </div>
+    );
+  }
+
+
+  if (menuHandle === 3.21) {
+    return (
+      <div className="comic-book-wrapper">
+        <button className="back-btn" onClick={() => setMenuHandle(3.2)}></button>
+        <div className="comic-book">
+        <HTMLFlipBook
+          width={337}
+          height={473}
+          minWidth={315}
+          maxWidth={1000}
+          minHeight={420}
+          maxHeight={1350}
+          showCover={false}
+          flippingTime={1000}
+        //   style={{ margin: "0 auto" }}
+          maxShadowOpacity={0.5}
+          className="album-web"
+        >
+          <PageCover><img src={comic1} alt=""/> </PageCover>
+          <PageCover><img src={page2} alt=""/></PageCover>
+          <PageCover><img src={page1} alt=""/></PageCover>
+          <PageCover><img src={page2} alt=""/></PageCover>
+          <PageCover>see you</PageCover>
+        </HTMLFlipBook>
+        </div>
+        <div className="next-comic" onClick={() => setMenuHandle(3.1)}>
             REVELATIONS AT <br></br>
             <span>NARING DRAG</span>
           </div>
-        </div>
       </div>
     );
   }

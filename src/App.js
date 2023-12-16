@@ -5,9 +5,9 @@ import { useEffect } from "react";
 
 
 function App() {
-  useEffect(() => {
-    document.body.style.zoom = "50%";
-  }, []);
+  // useEffect(() => {
+  //   document.body.style.zoom = "50%";
+  // }, []);
   const char1= [1450,1521, image1,"PEMA LINGPA"]
   return (
     <div className='main'>

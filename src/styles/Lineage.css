@@ -146,6 +146,11 @@
     top: -50%;
     right: 10%;
 }
+
+.comic-main-cover{
+    height: 469px;
+    cursor: pointer;
+}
 .submenu-clickable-reverse .comic-cover{
     top: 15%;
     left: 10%;
@@ -169,7 +174,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 5em;
-    transform: translate(68px, -60px);
+    transform: translate(68px, -38px);
 }
 
 .comic-block{
@@ -191,17 +196,33 @@
 }
 
 .next-comic{
-    background-color: black;
-    color: white;
-    border-radius: 20px;
+    background-color: #C9D7EE;
+    color: #001829;
     padding: 25px 40px;
     font-size: 24px;
     width: 317px;
     text-align: center;
     align-self: flex-end;
-    margin-top: 0.8em;
     cursor: pointer;
+    transform: translate(650px, -172px);
+  box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.45);
+
 }
+
+.next-comic::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url("../assets/texture-1.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
 
 .next-comic span{
     font-size: 42px;

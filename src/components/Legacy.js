@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from '../assets/Kenchosum-Lhakhang.png'
 import img2 from '../assets/Kunzangdrak,_Bumthang.png'
+import photogal from "../assets/Photo Gallery.png"
 
 const Legacy = ({menuHandle, setMenuHandle}) => {
     if (menuHandle===4){
@@ -35,19 +36,12 @@ const Legacy = ({menuHandle, setMenuHandle}) => {
             <p className='animate__animated animate__fadeIn animate__delay-3s'>Pema Lingpa built many temples such as Tamzhing Lhundrup Choling in Bumthang; Pemaling, Dechenling, and Kunzangdrak in Chel; Kunzangling in Kurtö; Dekyiling in Bamrin; Orgyenling in Tsangchu; Kyerechung Tashi Tengye in Layak; and several others. He restored damages and reconsecrated Gyatso Lhalun. Like his previous incarnations, Pema Lingpa left magical markings of his passing in many places like Kunzangdrak monastery and Gyagar Khamphuk. These marks have a status akin to a terma, as they are reminders of his ever-living presence.</p>
         </div>
         <div className="comic-main">
-            <div className="image-block-wrapper">
-            <div className="comic-block image-block">
-                <div className="comic image"><img src={img1} alt='legacy'/></div>
-            </div>
-            <div className="comic-block image-block">
-                <div className="comic image">IMG</div>
-            </div>
-            <div className="comic-block image-block">
-                <div className="comic image">IMG</div>
-            </div>
-            </div>
-           
-            <div className="next-comic" onClick={()=> setMenuHandle(4.2)}>PELING<br></br><span>DANCE</span></div>
+          <img
+            src={photogal}
+            alt=""
+            className="comic-main-cover"
+            onClick={() => setMenuHandle(4.11)}
+          />
         </div>
     </div>
     )
@@ -56,7 +50,7 @@ const Legacy = ({menuHandle, setMenuHandle}) => {
     if (menuHandle===4.2){
         return (
         <div className="lineage-wrapper">
-        <div className="text-box text-box-share text-box-light" style={{height: "300px"}}>
+        <div className="text-box text-box-share text-box-light" style={{height: "300px", width: "497px"}}>
             <h1 style={{fontSize: "32px"}}>Peling<br></br><b style={{fontSize: "48px"}}>dance</b></h1>
             <hr></hr>
             <p>Pema Lingpa’s legacies are preserved in the form of sacred dances called peling tercham which were revealed to him as dreams and visions. The ritual dances composed by him serve as a centerpiece for many festivals and ceremonies. The most popular of the dances are the dakini dance, the three ging dances signifying the subjugation of evil and the ging and tsholing dance. It is said that dakini would visit him in his dreams to teach him the steps of different sacred dances and give him further instructions.</p>

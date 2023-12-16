@@ -9,7 +9,7 @@ body, html{
   background-image: url(./assets/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200vh;
+  height: 100vh;
 }
 
 .no-char{
@@ -330,17 +330,11 @@ background-color: white;
   to {background-position: 0 0;}
   }
 
-.comic-book{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  
 
 
 .album-web {
-  background: rgb(255, 251, 251);
-  text-align: center;
+  left: -36px;
+  top: -50px;
 }
 
 .page {
@@ -348,7 +342,56 @@ background-color: white;
 }
 
 .cover {
-  background-color: rgb(251, 225, 139);
+  /* background-color: rgb(251, 225, 139); */
   box-shadow: 0 1.5em 3em -1em rgb(70, 69, 69);
+
+}
+.comic-book-wrapper{
+  width: 100%;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
+.cover-image{
+  background: rgb(255, 251, 251);
+
+}
+.cover-image > img{
+  width: 337px;
+  height: 473px;
+}
+.back-btn{
+  background-color: #2B455D;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  height: 214px;
+  position: absolute;
+  padding: 25px 40px;
+  cursor: pointer;
+  box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.45);
+    /* transform: translateY(301px); */
+    transform: translate(-207px, 64px);
+    z-index: 999;
+}
+.back-btn::before{
+  content: "<"!important;
+    color: white;
+    font-size: 4em;
+    font-family: monospace;
+}
+
+.back-btn::after{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url("./assets/texture-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
