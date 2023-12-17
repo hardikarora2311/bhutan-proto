@@ -1,9 +1,14 @@
 import React from "react";
 import comic1 from "../assets/Naring Drag Cover Image.png";
 import comic2 from "../assets/Burning Lake Cover Image.png";
-import page1 from "../assets/A3_6.png";
-import page2 from "../assets/A3_5.png";
+import comic1page1 from "../assets/A3_6.png";
+import comic1page2 from "../assets/A3_5.png";
+import comic2page1 from "../assets/A3_6 (1).png"
+import comic2page2 from "../assets/A3_5 (1).png"
 import HTMLFlipBook from "react-pageflip";
+import cover1 from "../assets/Comic Book Cover-1.png"
+import cover2 from "../assets/Comic Book Cover-2.png"
+
 
 
 const PageCover = React.forwardRef((props, ref) => {
@@ -49,7 +54,7 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
               REVELATIONS AT <br></br>
               <span>NARING DRAG</span>
             </div>
-            <img className="comic-cover" src={comic1} alt="" />
+            <img className="comic-cover" src={cover1} alt="" />
           </div>
           <div
             className="submenu-clickable submenu-clickable-reverse animate__animated animate__fadeInRight animate__delay-5s"
@@ -59,7 +64,7 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
               REVELATIONS AT <br></br>
               <span>BURNING LAKE</span>
             </div>
-            <img className="comic-cover" src={comic2} alt="" />
+            <img className="comic-cover" src={cover2} alt="" />
           </div>
         </div>
       </div>
@@ -97,9 +102,9 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
             Pema Lingpa.
           </p>
         </div>
-        <div className="comic-main">
+        <div className="comic-main animate__animated animate__fadeIn animate__delay-4s">
           <img
-            src={comic1}
+            src={cover1}
             alt=""
             className="comic-main-cover"
             onClick={() => setMenuHandle(3.11)}
@@ -121,16 +126,16 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
           maxWidth={1000}
           minHeight={420}
           maxHeight={1350}
-          showCover={false}
+          showCover={true}
           flippingTime={1000}
         //   style={{ margin: "0 auto" }}
           maxShadowOpacity={0.5}
           className="album-web"
         >
           <PageCover><img src={comic1} alt=""/> </PageCover>
-          <PageCover><img src={page2} alt=""/></PageCover>
-          <PageCover><img src={page1} alt=""/></PageCover>
-          <PageCover><img src={page2} alt=""/></PageCover>
+          <PageCover><img src={comic1page1} alt=""/></PageCover>
+          <PageCover><img src={comic1page2} alt=""/></PageCover>
+          <PageCover><img src={comic1page1} alt=""/></PageCover>
           <PageCover>see you</PageCover>
         </HTMLFlipBook>
         </div>
@@ -172,8 +177,8 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
             name Mebar tsho or Burning Lake.
           </p>
         </div>
-        <div className="comic-main">
-          <img src={comic2} alt="" className="comic-main-cover" onClick={() => setMenuHandle(3.21)} />
+        <div className="comic-main animate__animated animate__fadeIn animate__delay-4s">
+          <img src={cover2} alt="" className="comic-main-cover" onClick={() => setMenuHandle(3.21)} />
         </div>
       </div>
     );
@@ -192,16 +197,16 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
           maxWidth={1000}
           minHeight={420}
           maxHeight={1350}
-          showCover={false}
+          showCover={true}
           flippingTime={1000}
         //   style={{ margin: "0 auto" }}
           maxShadowOpacity={0.5}
           className="album-web"
         >
-          <PageCover><img src={comic1} alt=""/> </PageCover>
-          <PageCover><img src={page2} alt=""/></PageCover>
-          <PageCover><img src={page1} alt=""/></PageCover>
-          <PageCover><img src={page2} alt=""/></PageCover>
+          <PageCover><img src={comic2} alt=""/> </PageCover>
+          <PageCover><img src={comic2page1} alt=""/></PageCover>
+          <PageCover><img src={comic2page2} alt=""/></PageCover>
+          <PageCover><img src={comic2page1} alt=""/></PageCover>
           <PageCover>see you</PageCover>
         </HTMLFlipBook>
         </div>
