@@ -136,7 +136,7 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
           <PageCover><img src={comic1page1} alt=""/></PageCover>
           <PageCover><img src={comic1page2} alt=""/></PageCover>
           <PageCover><img src={comic1page1} alt=""/></PageCover>
-          <PageCover>see you</PageCover>
+          <PageCover><img src={comic1page2} alt=""/></PageCover>
         </HTMLFlipBook>
         </div>
         <div className="next-comic" onClick={() => setMenuHandle(3.2)}>
@@ -207,7 +207,7 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
           <PageCover><img src={comic2page1} alt=""/></PageCover>
           <PageCover><img src={comic2page2} alt=""/></PageCover>
           <PageCover><img src={comic2page1} alt=""/></PageCover>
-          <PageCover>see you</PageCover>
+          <PageCover><img src={comic2page2} alt=""/></PageCover>
         </HTMLFlipBook>
         </div>
         <div className="next-comic" onClick={() => setMenuHandle(3.1)}>
