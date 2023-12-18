@@ -10,6 +10,7 @@ body, html{
   background-repeat: repeat-y;
   background-size: contain;
   height: 100vh;
+  width: 150vw;
 }
 
 .no-char{
@@ -48,6 +49,7 @@ body, html{
   transform: translate(81px, 59px);
   /* transform: translate(890px, 459px); */
   font-family: 'Josefin Sans', sans-serif;
+  
 
 }
 

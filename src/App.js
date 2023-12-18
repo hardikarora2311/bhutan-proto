@@ -11,10 +11,10 @@ function App() {
   // useEffect(() => {
   //   document.body.style.zoom = "25%";
   // }, []);
-  const char1= [1450,1521, image1,"PEMA LINGPA", 1800, 200]
+  const char1= [1450,1521, image1,"PEMA LINGPA", 1800, 100]
   const char2= [800,90, image2,"SUPINE DEMONESS", 44, 1100]
-  const char3= [900,1000, image3,"GURU RINPOCHE", 3800, 200]
-  const char4= [1200,1800, image4,"TIBETAN INFLUX INTO BHUTAN", 3000, 1100]
+  const char3= [900,1000, image3,"GURU RINPOCHE", 3800, 100]
+  const char4= [1200,1800, image4,"TIBETAN INFLUX INTO BHUTAN", 2500, 1100]
   return (
     <div className='main'>
       <Character characterInfo={char1}/>
