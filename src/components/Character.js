@@ -24,9 +24,11 @@ const menuHandler = () => {
 const menuReset = () => {
     setMenuHandle(0)
 };
-
+const styles = { 
+    transform: `translate(${characterInfo[4]}px, ${characterInfo[5]}px)` 
+};
   return (
-    <div className="character">
+    <div className="character" style={styles}>
             <div className={charActivate?"char-header " :"animate__animated animate__zoomIn char-header "} onClick={characterHandler}>
                 <span className={charActivate?'date o-hidden': "date"}>{characterInfo[0]}<br></br>-{characterInfo[1]}</span>
                 <img className={charActivate?"": 'shimmer'} src={characterInfo[2]} alt={characterInfo[3]} />

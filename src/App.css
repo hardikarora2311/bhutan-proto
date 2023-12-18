@@ -6,9 +6,9 @@ body, html{
   margin: 0;
 }
 .main{
-  background-image: url(./assets/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(./assets/map.png);
+  background-repeat: repeat-y;
+  background-size: contain;
   height: 100vh;
 }
 
@@ -28,7 +28,7 @@ body, html{
 }
 .char-header > img{
   height: 422px;
-  width: 355px;
+  /* width: 355px; */
   transform: translateX(-12%);
   z-index: 2;
   /* box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.45); */
