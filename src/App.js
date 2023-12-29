@@ -18,9 +18,9 @@ function App() {
   return (
     <div className='main'>
       <Character characterInfo={char1}/>
-      <Character characterInfo={char2}/>
-      <Character characterInfo={char3}/>
-      <Character characterInfo={char4}/>
+      {/* <Character characterInfo={char2}/> */}
+      {/* <Character characterInfo={char3}/> */}
+      {/* <Character characterInfo={char4}/> */}
     </div>
   );
 }
