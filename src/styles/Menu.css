@@ -12,7 +12,11 @@
 
 }
 .home-new-pos{
-    transform: translate(6px, 186px);
+    animation: revealRight 1.5s forwards;
+  /* animation-delay: 3s; */
+  clip-path: inset(0% 0% 100% 100% );
+  transform: translate(6px, 186px);
+
 }
 
 .menu-main li{

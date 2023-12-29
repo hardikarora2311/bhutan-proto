@@ -72,6 +72,7 @@ body, html{
   transform: translateX(-25%);
   z-index: 1;
   position: relative;
+  transition: all 1.5s ease-in;
 }
 
 .name::before{
@@ -623,6 +624,8 @@ background-color: white;
 }
 
 
-
+.date-hidden{
+  display: none;
+}
 
 
