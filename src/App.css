@@ -203,6 +203,10 @@ body, html{
   overflow: hidden;
   /* animation: leftEdgeAnimation 2s forwards, entranceAnimation 3s 2s forwards; */
   animation: leftEdgeAnimation 2s forwards;
+  height: 0;
+  width: 5px;
+  padding: 0;
+  animation-delay: 1s;
 }
 .tb-dark-blue{
   background-color: #193145;
@@ -473,64 +477,152 @@ background-color: white;
   }
   
 }
+@keyframes leftEdgeAnimationShare {
+  0% {
+    opacity: 1;
+    height: 0;
+    width: 5px;
+    padding: 40px 0;
+    
+  transform-origin: 0% 0%;
+
+  }
+  50% {
+    opacity: 1;
+    height: 302px;
+    width: 5px;
+    padding: 40px 0;
+
+   
+  transform-origin: 0% 0%;
+
+  }
+  
+  100% {
+    opacity: 1;
+    height: 302px;
+    width: 650px;
+    padding: 40px;
+  transform-origin: left;
+
+  }
+}
+
+@keyframes leftEdgeAnimationShare375 {
+  0% {
+    opacity: 1;
+    height: 0;
+    width: 5px;
+    padding: 40px 0;
+    
+  transform-origin: 0% 0%;
+
+  }
+  50% {
+    opacity: 1;
+    height: 375px;
+    width: 5px;
+    padding: 40px 0;
+
+   
+  transform-origin: 0% 0%;
+
+  }
+  
+  100% {
+    opacity: 1;
+    height: 375px;
+    width: 650px;
+    padding: 40px;
+  transform-origin: left;
+
+  }
+}
+
+@keyframes leftEdgeAnimationShare270 {
+  0% {
+    opacity: 1;
+    height: 0;
+    width: 5px;
+    padding: 40px 0;
+    
+  transform-origin: 0% 0%;
+
+  }
+  50% {
+    opacity: 1;
+    height: 270px;
+    width: 5px;
+    padding: 40px 0;
+
+   
+  transform-origin: 0% 0%;
+
+  }
+  
+  100% {
+    opacity: 1;
+    height: 270px;
+    width: 650px;
+    padding: 40px;
+  transform-origin: left;
+
+  }
+}
+.reveal-menu .revealRight-class{
+  animation: revealRight 2s forwards;
+  animation-delay: 2s;
+  clip-path: inset(0% 0% 100% 100% );
+}
+
+.reveal-menu .revealLeft-class{
+  animation: revealLeft 2s forwards ;
+  animation-delay: 2s;
+  clip-path: inset(0% 0% 100% 100% );
+}
 .icon-animate{
   /* animation: rightEdgeAnimation 4s forwards; */
-  animation: reveal 2s forwards;
+  animation: revealRight 1.5s forwards;
   animation-delay: 5s;
   clip-path: inset(0% 0% 100% 100% );
 }
-@keyframes reveal {
+@keyframes revealRight {
   0% {
     clip-path: inset(0% 0% 95% 95% );
   }
   50% {
     clip-path: inset(0% 0% 0% 95%);
   }
+  75% {
+    clip-path: inset(0% 0% 0% 95%);
+  }
   100%{
     clip-path: inset(0% 0% 0% 0%);
   }
 }
-@keyframes rightEdgeAnimation {
-  0% {
-    opacity: 1;
-    /* scale: 0.01 0; */
-    height: 0;
-    width: 5px;
-    padding: 25px 0;
-    /* transform: scale(0.01, 0); */
-    /* transform: translate(1307%, -32px); */
-    /* transform: translate(125px, -32px); */
-  transform-origin: right 0%;
 
+.animate-icon-next{
+  /* animation: rightEdgeAnimation 4s forwards; */
+  animation: revealLeft 1.5s forwards;
+  animation-delay: 5s;
+  clip-path: inset(0% 100% 100% 0% );
+}
+@keyframes revealLeft {
+  0% {
+    clip-path: inset(0% 95% 95% 0% );
   }
   50% {
-    opacity: 1;
-    /* scale: 0.01 1; */
-    height: 80px;
-    width: 5px;
-    padding: 25px 0;
-
-    /* transform: translate(1307%, -32px); */
-    /* transform: translate(125px, -32px); */
-    /* transform: scale(0.01, 1); */
-    transform-origin: right 0%;
-
+    clip-path: inset(0% 95% 0% 0%);
   }
-  
-  100% {
-    opacity: 1;
-    /* scale: 0.01 1; */
-    height: 80px;
-    width: 120px;
-    padding: 25px 40px;
-
-    /* transform: translate(1307%, -32px); */
-    /* transform: translate(125px, -32px); */
-    /* transform: scale(0.01, 1); */
-  transform-origin: right;
-
+  75% {
+    clip-path: inset(0% 95% 0% 0%);
   }
-  
+  100%{
+    clip-path: inset(0% 0% 0% 0%);
+  }
 }
+
+
+
 
 

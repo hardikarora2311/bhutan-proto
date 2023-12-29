@@ -6,6 +6,8 @@
     width: 650px;
     /* height: 302px; */
     position: relative;
+  animation: leftEdgeAnimationShare 2s forwards;
+
 }
 .familytree{
     background-color: #60292A;
@@ -110,7 +112,25 @@
     align-items: center;
     position: relative;
   box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.45);
+  animation: revealLeftBook 2s forwards ;
+  animation-delay: 5s;
+  clip-path: inset(0% 0% 100% 100% );
 }
+
+@keyframes revealLeftBook {
+    0% {
+      clip-path: inset(0% 95% 95% 0% );
+    }
+    50% {
+      clip-path: inset(0% 95% 0% 0%);
+    }
+    75% {
+      clip-path: inset(0% 95% 0% 0%);
+    }
+    100%{
+      clip-path: inset(-50% 0% -42% 0%);
+    }
+  }
 .submenu-clickable::before{
     content: ' ';
     display: block;
@@ -137,6 +157,8 @@
 
 .comic-title{
     text-align: left;
+    animation: fadeIn;
+    animation-delay: 9s;
 }
 
 .comic-cover{
@@ -144,7 +166,9 @@
     width: 162px;
     position: absolute;
     top: -50%;
-    right: 10%;
+    right: 10%; 
+    animation: fadeIn;
+    animation-delay: 10s;
 }
 
 .comic-main-cover{

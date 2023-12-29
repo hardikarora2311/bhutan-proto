@@ -45,14 +45,15 @@ const styles = {
             </div> */}
             <div className={charActivate? "char-section": "char-section no-char"}>
                 {/* <button className= {menuHandle===-1? "home-icon animate__animated animate__fadeIn animate__delay-4s":(menuHandle ===0)?"home-icon home-icon-red home-new-pos animate__animated animate__fadeIn animate__delay-4s":(menuHandle %1 ===0)?"home-icon home-icon-red animate__animated animate__fadeIn animate__delay-4s":(menuHandle %1 !==0)?"home-icon animate__animated animate__fadeIn animate__delay-4s": "home-icon no-char"} onClick={menuReset}><img src={home} alt="Main Menu" /></button> */}
-                <button className= {menuHandle===-1? "home-icon icon-animate":(menuHandle ===0)?"home-icon home-icon-red home-new-pos icon-animate":(menuHandle %1 ===0)?"home-icon home-icon-red icon-animate":(menuHandle %1 !==0)?"home-icon icon-animate": "home-icon no-char"} onClick={menuReset}><img src={home} alt="Main Menu" /></button>
+                <button className= {menuHandle===-1? "home-icon icon-animate":(menuHandle ===0)?"home-icon home-icon-red home-new-pos icon-animate":(menuHandle %1 ===0)?"home-icon home-icon-red icon-animate":(menuHandle %1 !==0)?"home-icon icon-animate": "home-icon no-char"} onClick={menuReset}><img src={home} alt="Main Menu" className='animate__animated animate__fadeIn animate__delay-5s'/></button>
                 <Intro menuHandle={menuHandle}/>
                 <Menu menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
                 <History menuHandle={menuHandle}/>
                 <Lineage menuHandle={menuHandle}/>
                 <Revelations menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
                 <Legacy menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
-                <button className={(menuHandle===-1)?"next animate__animated animate__fadeIn animate__delay-4s":( menuHandle===1)?"next next-red animate__animated animate__fadeIn animate__delay-4s": "next no-char"} onClick={menuHandler}></button>
+                {/* <button className={(menuHandle===-1)?"next animate__animated animate__fadeIn animate__delay-4s":( menuHandle===1)?"next next-red animate__animated animate__fadeIn animate__delay-4s": "next no-char"} onClick={menuHandler}></button> */}
+                <button className={(menuHandle===-1)?"next animate-icon-next":( menuHandle===1)?"next next-red animate-icon-next": "next no-char"} onClick={menuHandler}></button>
                 <button className={(menuHandle===2)?"next next-red next-newpos animate__animated animate__fadeIn animate__delay-4s": "next no-char"} onClick={menuHandler}></button>
             </div>
             

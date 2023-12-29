@@ -28,14 +28,14 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
     return (
       <div className="lineage-wrapper">
         <div
-          className="animate__animated animate__zoomIn animate__delay-1s text-box text-box-clrd text-box-share"
+          className="text-box text-box-clrd text-box-share"
           style={{ height: "302px" }}
         >
-          <h1 className="animate__animated animate__fadeIn animate__delay-2s">
+          <h1 className="animate__animated animate__fadeIn animate__delay-3s">
             Revelations by pema lingpa
           </h1>
           <hr></hr>
-          <p className="animate__animated animate__fadeIn animate__delay-3s">
+          <p className="animate__animated animate__fadeIn animate__delay-4s">
             Pema Lingpa discovered treasures mainly around Bumthang’s valleys
             and regions north of its current borders with Tibet. He revealed
             exclusively physical terma, both texts and relics. In his lifetime,
@@ -47,7 +47,7 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
         </div>
         <div className="comic-submenu">
           <div
-            className="submenu-clickable animate__animated animate__fadeInLeft animate__delay-4s"
+            className="submenu-clickable"
             onClick={() => setMenuHandle(3.1)}
           >
             <div className="comic-title">
@@ -57,7 +57,7 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
             <img className="comic-cover" src={cover1} alt="" />
           </div>
           <div
-            className="submenu-clickable submenu-clickable-reverse animate__animated animate__fadeInRight animate__delay-5s"
+            className="submenu-clickable submenu-clickable-reverse"
             onClick={() => setMenuHandle(3.2)}
           >
             <div className="comic-title">
@@ -75,18 +75,18 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
     return (
       <div className="lineage-wrapper">
         <div
-          className=" animate__animated animate__zoomIn animate__delay-1s text-box text-box-share text-box-light"
-          style={{ height: "375px" }}
+          className="text-box text-box-share text-box-light"
+          style={{ height: "375px" , animation: "leftEdgeAnimationShare375 2s forwards"}}
         >
           <h1
-            className="animate__animated animate__fadeIn animate__delay-2s"
+            className="animate__animated animate__fadeIn animate__delay-3s"
             style={{ fontSize: "32px" }}
           >
             Revelations At <br></br>
             <b style={{ fontSize: "48px" }}>NAring Drag</b>
           </h1>
           <hr></hr>
-          <p className="animate__animated animate__fadeIn animate__delay-3s">
+          <p className="animate__animated animate__fadeIn animate__delay-4s">
             Pema Lingpa is awakened by the voice of a monk, who urges him to
             read a scroll thrust into his hands. The scroll instructs Pema
             Lingpa to gather five friends and go to Naring Drak on a full moon
@@ -139,9 +139,20 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
           <PageCover><img src={comic1page2} alt=""/></PageCover>
         </HTMLFlipBook>
         </div>
-        <div className="next-comic" onClick={() => setMenuHandle(3.2)}>
+        {/* <div className="next-comic" onClick={() => setMenuHandle(3.2)}>
             REVELATIONS AT <br></br>
             <span>BURNING LAKE</span>
+          </div> */}
+          <div
+            className="submenu-clickable submenu-clickable-reverse"
+            style={{transform: "translate(650px, -172px)", width: "469px"}}
+            onClick={() => setMenuHandle(3.2)}
+          >
+            <div className="comic-title">
+              REVELATIONS AT <br></br>
+              <span>BURNING LAKE</span>
+            </div>
+            <img className="comic-cover" src={cover2} alt="" />
           </div>
       </div>
     );
@@ -151,18 +162,18 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
     return (
       <div className="lineage-wrapper">
         <div
-          className=" animate__animated animate__zoomIn animate__delay-1s text-box text-box-share text-box-light"
-          style={{ height: "375px" }}
+          className="text-box text-box-share text-box-light"
+          style={{ height: "375px", animation: "leftEdgeAnimationShare375 2s forwards" }}
         >
           <h1
-            className="animate__animated animate__fadeIn animate__delay-2s"
+            className="animate__animated animate__fadeIn animate__delay-3s"
             style={{ fontSize: "32px" }}
           >
             Revelations At <br></br>
             <b style={{ fontSize: "48px" }}>Burning Lake</b>
           </h1>
           <hr></hr>
-          <p className="animate__animated animate__fadeIn animate__delay-3s">
+          <p className="animate__animated animate__fadeIn animate__delay-4s">
             When the local Choekhor governor hears of the popularity of Pema
             Lingpa, he is not convinced of his authenticity. Assembling a large
             group of people in Naring Drag, he asks Pema Lingpa to prove his
@@ -210,9 +221,20 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
           <PageCover><img src={comic2page2} alt=""/></PageCover>
         </HTMLFlipBook>
         </div>
-        <div className="next-comic" onClick={() => setMenuHandle(3.1)}>
+        {/* <div className="next-comic" onClick={() => setMenuHandle(3.1)}>
             REVELATIONS AT <br></br>
             <span>NARING DRAG</span>
+          </div> */}
+          <div
+            className="submenu-clickable"
+            style={{transform: "translate(650px, -172px)", width: "469px"}}
+            onClick={() => setMenuHandle(3.1)}
+          >
+            <div className="comic-title">
+              REVELATIONS AT <br></br>
+              <span>NARING DRAG</span>
+            </div>
+            <img className="comic-cover" src={cover1} alt="" />
           </div>
       </div>
     );
