@@ -8,11 +8,11 @@ const Legacy = ({menuHandle, setMenuHandle}) => {
         return (
             <div className="lineage-wrapper">
             <div className="text-box text-box-share text-box-clrd" style={{height: "270px", animation: "leftEdgeAnimationShare270 2s forwards"}}>
-                <h1 className='animate__animated animate__fadeIn animate__delay-3s'>LEGACY</h1>
+                <h1 className='animate__animated animate__fadeIn animate__delay-4s'>LEGACY</h1>
                 <hr></hr>
-                <p className='animate__animated animate__fadeIn animate__delay-4s'>Pema Lingpa established an enormous corpus of literature which serves as the primary basis of religious life for Buddhist followers. The teachings and the cycle of treasures of Pema Lingpa contain several practices, rituals, and instructions that lead sentient beings to liberation. Pema Lingpa’s legacies are preserved in the form of sacred dances which were revealed to him as dreams and visions. The ritual dances, cham composed by him serve as a centrepiece for many festivals and ceremonies across Bhutan.</p>
+                <p className='animate__animated animate__fadeIn animate__delay-5s'>Pema Lingpa established an enormous corpus of literature which serves as the primary basis of religious life for Buddhist followers. The teachings and the cycle of treasures of Pema Lingpa contain several practices, rituals, and instructions that lead sentient beings to liberation. Pema Lingpa’s legacies are preserved in the form of sacred dances which were revealed to him as dreams and visions. The ritual dances, cham composed by him serve as a centrepiece for many festivals and ceremonies across Bhutan.</p>
             </div>
-            <div className="legacy-submenu animate__animated animate__fadeIn animate__delay-4s">
+            <div className="legacy-submenu animate__animated animate__fadeIn animate__delay-5s">
                 <img src={img1} alt='legacy'  style={{marginRight: "auto"}}/>
                 <div className="submenu-clickable submenu-clickable-legacy" onClick={()=> setMenuHandle(4.1)}>
                     <div className="comic-title">Peling <br></br><span>Monasteries & Temples</span></div>
@@ -30,16 +30,16 @@ const Legacy = ({menuHandle, setMenuHandle}) => {
       if (menuHandle===4.1){
         return (
         <div className="lineage-wrapper">
-        <div className="text-box text-box-share text-box-light" style={{height: "320px"}}>
-            <h1 className='animate__animated animate__fadeIn animate__delay-3s' style={{fontSize: "32px"}}>Peling<br></br><b style={{fontSize: "48px"}}>Monasteries & Temples</b></h1>
+        <div className="text-box text-box-share text-box-light" >
+            <h1 className='animate__animated animate__fadeIn animate__delay-4s' style={{fontSize: "32px"}}>Peling<br></br><b style={{fontSize: "48px"}}>Monasteries & Temples</b></h1>
             <hr></hr>
-            <p className='animate__animated animate__fadeIn animate__delay-4s'>Pema Lingpa built many temples such as Tamzhing Lhundrup Choling in Bumthang; Pemaling, Dechenling, and Kunzangdrak in Chel; Kunzangling in Kurtö; Dekyiling in Bamrin; Orgyenling in Tsangchu; Kyerechung Tashi Tengye in Layak; and several others. He restored damages and reconsecrated Gyatso Lhalun. Like his previous incarnations, Pema Lingpa left magical markings of his passing in many places like Kunzangdrak monastery and Gyagar Khamphuk. These marks have a status akin to a terma, as they are reminders of his ever-living presence.</p>
+            <p className='animate__animated animate__fadeIn animate__delay-5s'>Pema Lingpa built many temples such as Tamzhing Lhundrup Choling in Bumthang; Pemaling, Dechenling, and Kunzangdrak in Chel; Kunzangling in Kurtö; Dekyiling in Bamrin; Orgyenling in Tsangchu; Kyerechung Tashi Tengye in Layak; and several others. He restored damages and reconsecrated Gyatso Lhalun. Like his previous incarnations, Pema Lingpa left magical markings of his passing in many places like Kunzangdrak monastery and Gyagar Khamphuk. These marks have a status akin to a terma, as they are reminders of his ever-living presence.</p>
         </div>
-        <div className="comic-main">
+        <div className="photo-gal">
           <img
             src={photogal}
             alt=""
-            className="comic-main-cover"
+            className="photo-gal-cover animate__animated animate__fadeIn"
             onClick={() => setMenuHandle(4.11)}
           />
         </div>

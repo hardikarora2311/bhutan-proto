@@ -24,18 +24,19 @@ const PageCover = React.forwardRef((props, ref) => {
 
 
 const Revelations = ({ menuHandle, setMenuHandle }) => {
-  if (menuHandle === 3) {
+  if (menuHandle === 3 || menuHandle===4) {
     return (
       <div className="lineage-wrapper">
         <div
-          className="text-box text-box-clrd text-box-share"
-          style={{ height: "302px" }}
+          className={(menuHandle>=3 && menuHandle<5)? ( menuHandle===3? "text-box text-box-share text-box-clrd":"text-box text-box-share text-box-clrd tb-exit"): ("text-box text-box-share text-box-clrd tb-exit v-hidden") }
+          
         >
-          <h1 className="animate__animated animate__fadeIn animate__delay-3s">
+          <div className="solid-wipe"></div>
+          <h1 className="animate__animated animate__fadeIn animate__delay-4s">
             Revelations by pema lingpa
           </h1>
           <hr></hr>
-          <p className="animate__animated animate__fadeIn animate__delay-4s">
+          <p className="animate__animated animate__fadeIn animate__delay-5s">
             Pema Lingpa discovered treasures mainly around Bumthang’s valleys
             and regions north of its current borders with Tibet. He revealed
             exclusively physical terma, both texts and relics. In his lifetime,
@@ -45,7 +46,7 @@ const Revelations = ({ menuHandle, setMenuHandle }) => {
             Lingpa’ consists of 21 volumes.
           </p>
         </div>
-        <div className="comic-submenu">
+        <div className={(menuHandle>=3 && menuHandle<5)? ( menuHandle===3? "comic-submenu":"animate__animated animate__fadeOut"): ("") }>
           <div
             className="submenu-clickable"
             onClick={() => setMenuHandle(3.1)}
