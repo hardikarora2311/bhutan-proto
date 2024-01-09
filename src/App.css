@@ -34,9 +34,11 @@ body, html{
   z-index: 2;
   /* box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.45); */
   filter:drop-shadow(2px 8px 1px rgba(0,0,0,0.45)); 
-
-
 }
+
+
+
+
 .char-section{
   display: flex;
   position: relative;
@@ -241,6 +243,7 @@ body, html{
   background-position: 50% 0;
   background-size: cover;
   animation: texture 6s linear infinite;
+  animation-direction:alternate ;
   transform-origin: left 50%;
 
 
@@ -342,8 +345,8 @@ background-color: white;
 
 
   @keyframes texture {
-    from {background-position: -300px 0;}
-  to {background-position: 0 0;}
+  0% {background-position: -300px 0;}
+  50% {background-position: 0 0;}
   }
 
 

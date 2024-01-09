@@ -69,9 +69,12 @@
     background-position: 50% 0;
     background-size: cover;
   animation: texture 8s linear infinite;
+  animation-direction:alternate ;
+
   }
 
   @keyframes texture {
-    from {background-position: -300px 0;}
-  to {background-position: 0 0;}
+    0% {background-position: -300px 0;}
+    100% {background-position: 0 0;}
+
   }

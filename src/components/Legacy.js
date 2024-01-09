@@ -50,13 +50,13 @@ const Legacy = ({menuHandle, setMenuHandle}) => {
     if (menuHandle===4.2){
         return (
         <div className="lineage-wrapper">
-        <div className="text-box text-box-share text-box-light" style={{height: "300px", width: "497px"}}>
-            <h1 style={{fontSize: "32px"}}>Peling<br></br><b style={{fontSize: "48px"}}>dance</b></h1>
+        <div className="text-box text-box-share text-box-light">
+            <h1 className='animate__animated animate__fadeIn animate__delay-4s' style={{fontSize: "32px"}}>Peling<br></br><b style={{fontSize: "48px"}}>dance</b></h1>
             <hr></hr>
-            <p>Pema Lingpa’s legacies are preserved in the form of sacred dances called peling tercham which were revealed to him as dreams and visions. The ritual dances composed by him serve as a centerpiece for many festivals and ceremonies. The most popular of the dances are the dakini dance, the three ging dances signifying the subjugation of evil and the ging and tsholing dance. It is said that dakini would visit him in his dreams to teach him the steps of different sacred dances and give him further instructions.</p>
+            <p className='animate__animated animate__fadeIn animate__delay-5s'>Pema Lingpa’s legacies are preserved in the form of sacred dances called peling tercham which were revealed to him as dreams and visions. The ritual dances composed by him serve as a centerpiece for many festivals and ceremonies. The most popular of the dances are the dakini dance, the three ging dances signifying the subjugation of evil and the ging and tsholing dance. It is said that dakini would visit him in his dreams to teach him the steps of different sacred dances and give him further instructions.</p>
         </div>
         <div className="comic-main">
-            <div className="comic-block">
+            <div className="comic-block animate__animated animate__fadeIn animate__delay-5s">
                 <div className="comic video">VIDEO</div>
             </div>
             <div className="next-comic" onClick={()=> setMenuHandle(4.1)}>PELING<br></br><span>MONASTRIES & TEMPLES</span></div>
