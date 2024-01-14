@@ -27,18 +27,61 @@ body, html{
   position: absolute;
   transform: translate(20%);
 }
-.char-header > img{
+/* .char-header > img{
   height: 422px;
-  /* width: 355px; */
   transform: translateX(-12%);
   z-index: 2;
-  /* box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.45); */
   filter:drop-shadow(2px 8px 1px rgba(0,0,0,0.45)); 
+} */
+.img-container{
+  position: relative;
 }
 
+.img-container img{
+  height: 422px;
+    /* top:50%; */
+    /* left:50%; */
+    transform: translateX(-12%);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+}
+.img-container img.main-img {
+  position: relative;
+  z-index:3;
+  filter:drop-shadow(2px 8px 1px rgba(0,0,0,0.45)); 
 
+}
+.img-container img.glow {
+  z-index:2;
+  position:absolute;
+  left: 0%;
+  transform: scale(1.01) translateX(-12%);;
+  -webkit-transform: scale(1.01)translateX(-12%);;
+  filter: brightness(0) invert(1) blur(5px);
+  -webkit-filter: brightness(1) invert(1) blur(0px) drop-shadow(0px 0px blue);
+  clip-path: inset(100% 0% 0% 50% );
+  animation: glowImage 18s forwards;
+  animation-iteration-count: infinite;
+}
 
-
+@keyframes glowImage {
+  0% {
+    clip-path: inset(100% 0% 0% 50%);
+    -webkit-filter: brightness(1) invert(1) blur(3px) drop-shadow(1px 0px blue);
+  }
+  50% {
+    clip-path: inset(0% 0% 0% 50%);
+    -webkit-filter: brightness(1) invert(1) blur(3px) drop-shadow(1px 0px blue);
+  }
+  75% {
+    clip-path: inset(0% 50% 100% 0%);
+    -webkit-filter: brightness(1) invert(1) blur(2px) drop-shadow(-1px 0px blue);
+  }
+  100%{
+    clip-path: inset(0% 50% 0% 0%);
+    -webkit-filter: brightness(1) invert(1) blur(3px) drop-shadow(-1px 0px blue);
+  }
+}
 .char-section{
   display: flex;
   position: relative;

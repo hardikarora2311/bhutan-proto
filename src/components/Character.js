@@ -31,7 +31,10 @@ const styles = {
     <div className="character" style={styles}>
             <div className={charActivate?"char-header " :"animate__animated animate__zoomIn char-header "} onClick={characterHandler}>
                 <span className={charActivate?'date o-hidden': "date"}>{characterInfo[0]}<br></br>-{characterInfo[1]}</span>
-                <img className={charActivate?"": 'shimmer'} src={characterInfo[2]} alt={characterInfo[3]} />
+                <div className="img-container">
+                    <img className={charActivate?"main-img": 'shimmer main-img'} src={characterInfo[2]} alt={characterInfo[3]} />
+                    <img className={charActivate?"glow": 'glow'} src={characterInfo[2]} alt={characterInfo[3]} />
+                </div>
                 <div className={charActivate?(menuHandle===-1 || menuHandle %1 !==0? "name name-new":(menuHandle===0?"name name-menu":(menuHandle %1 ===0?"name name-menu-item":"name menu-sub-item"))):'name'}>{characterInfo[3]} <br />
                     <div className={charActivate? 'info-date': "info-date date-hidden"}>{characterInfo[0]} - {characterInfo[1]}</div>
                 </div>
