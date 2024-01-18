@@ -67,19 +67,19 @@ body, html{
 @keyframes glowImage {
   0% {
     clip-path: inset(100% 0% 0% 50%);
-    -webkit-filter: brightness(1) invert(1) blur(5px) drop-shadow(1px 0px blue);
+    -webkit-filter: brightness(1) invert(1) blur(4px) drop-shadow(1px 0px blue);
   }
   50% {
     clip-path: inset(0% 0% 0% 50%);
-    -webkit-filter: brightness(1) invert(1) blur(5px) drop-shadow(1px 0px blue);
+    -webkit-filter: brightness(1) invert(1) blur(4px) drop-shadow(1px 0px blue);
   }
   75% {
     clip-path: inset(0% 50% 100% 0%);
-    -webkit-filter: brightness(1) invert(1) blur(5px) drop-shadow(-1px 0px blue);
+    -webkit-filter: brightness(1) invert(1) blur(4px) drop-shadow(-1px 0px blue);
   }
   100%{
     clip-path: inset(0% 50% 0% 0%);
-    -webkit-filter: brightness(1) invert(1) blur(5px) drop-shadow(-1px 0px blue);
+    -webkit-filter: brightness(1) invert(1) blur(4px) drop-shadow(-1px 0px blue);
   }
 }
 .char-section{
