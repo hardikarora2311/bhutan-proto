@@ -20,7 +20,7 @@ function App() {
   return (
     <div className='main'>
       <div className={modalShow? "modal-alert": "model-alert no-modal"}>
-        <p>As this prototype is made for a large touchscreen, kindly set your browser zoom level to 33% or less to expereince this.</p>
+        <p>As this prototype is made for a large touchscreen, kindly set your browser zoom level to 33% or less to experience this.</p>
         <div className="ok-btn" onClick={() => setModalShow(false)}>Cool, got it!</div>
       </div>
       <Character characterInfo={char1}/>
