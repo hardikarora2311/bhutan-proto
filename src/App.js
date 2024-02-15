@@ -14,7 +14,7 @@ function App() {
   //   document.body.style.zoom = "33%";
   // }, []);
   const char1= [1450,1521, image1,"PEMA LINGPA", 0, -300]
-  const char2= [800,90, image2,"SUPINE DEMONESS", -1500, 800]
+  const char2= [800,90, image2,"SUPINE DEMONESS", -500, 800]
   const char3= [900,1000, image3,"GURU RINPOCHE", 2000, 100]
   // const char4= [1200,1800, image4,"TIBETAN INFLUX INTO BHUTAN", 2500, 1100]
   return (
