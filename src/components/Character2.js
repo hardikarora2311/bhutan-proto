@@ -30,10 +30,10 @@ const styles = {
     <div className="character" style={styles}>
             <div className={charActivate?"char-header " :"char-header "} onClick={characterHandler}>
                 <span className={charActivate?'date blur-out-contract': "date date-an-2"}>{characterInfo[0]}<br></br>-{characterInfo[1]}</span>
-                <div className="img-container shake-horizontal">
+                <div className="img-container">
                     <img className={charActivate?"main-img-2 main-img-2-shad": 'shake-horizontal main-img-2'} src={characterInfo[2]} alt={characterInfo[3]} />
                 </div>
-                <div className={charActivate?(menuHandle===-1 || menuHandle %1 !==0? "name name-new":(menuHandle===0?"name name-menu":(menuHandle %1 ===0?"name name-menu-item":"name menu-sub-item"))):'name'}>{characterInfo[3]} <br />
+                <div className={charActivate?(menuHandle===-1 || menuHandle %1 !==0? "name name-new rotate-out-center-label":(menuHandle===0?"name name-menu rotate-out-center-label-new":(menuHandle %1 ===0?"name name-menu-item rotate-out-center-label":"name menu-sub-item rotate-out-center-label-new"))):'name shake-horizontal-label '}>{characterInfo[3]} <br />
                     <div className={charActivate? 'info-date': "info-date date-hidden"}>{characterInfo[0]} - {characterInfo[1]}</div>
                 </div>
             </div>

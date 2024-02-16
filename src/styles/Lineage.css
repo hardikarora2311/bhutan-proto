@@ -22,7 +22,20 @@
     overflow: hidden;
     height: 320px;
     animation: slide-in-blurred-top 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation-delay: 1s;
+    animation-delay: 3s;
+    transition-delay: 1.2s !important;
+  }
+  .text-box-2-his{
+    width: 789px;
+    padding: 40px;
+    transform-origin: 0% 0%;
+    transform: translate(125px, -32px);
+    position: absolute;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    height: 320px;
+    animation: slide-in-blurred-top 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation-delay: 7s;
     transition-delay: 1.2s !important;
   }
   @keyframes slide-in-blurred-top {
@@ -95,7 +108,20 @@
     overflow: hidden;
     height: 320px;
     animation:flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-delay: 1s;
+    animation-delay: 3s;
+    transition-delay: 1.2s !important;
+  }
+  .text-box-3-his{
+    width: 789px;
+    padding: 40px;
+    transform-origin: 0% 0%;
+    transform: translate(125px, -32px);
+    position: absolute;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    height: 320px;
+    animation:flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 7s;
     transition-delay: 1.2s !important;
   }
   

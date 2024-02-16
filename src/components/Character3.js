@@ -33,7 +33,7 @@ const Character3 = ({characterInfo=[]}) => {
                     <div className="img-container">
                         <img className={charActivate?"main-img-2 flip-2-hor-top-fwd": 'wobble-hor-bottom  main-img-2'} src={characterInfo[2]} alt={characterInfo[3]} />
                     </div>
-                    <div className={charActivate?(menuHandle===-1 || menuHandle %1 !==0? "name name-new":(menuHandle===0?"name name-menu":(menuHandle %1 ===0?"name name-menu-item":"name menu-sub-item"))):'name'}>{characterInfo[3]} <br />
+                    <div className={charActivate?(menuHandle===-1 || menuHandle %1 !==0? "name flip-out-ver-left-label name-new":(menuHandle===0?"name flip-out-ver-left-label-new name-menu":(menuHandle %1 ===0?"name flip-out-ver-left-label name-menu-item":"name flip-out-ver-left-label-new menu-sub-item"))):'name bounce-left-label'}>{characterInfo[3]} <br />
                         <div className={charActivate? 'info-date': "info-date date-hidden"}>{characterInfo[0]} - {characterInfo[1]}</div>
                     </div>
                 </div>
