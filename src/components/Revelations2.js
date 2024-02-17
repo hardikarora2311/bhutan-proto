@@ -39,9 +39,9 @@ const Revelations2 = ({ menuHandle, setMenuHandle }) => {
                 Lingpa’ consists of 21 volumes.
               </p>
             </div>
-            <div className={(menuHandle>=3 && menuHandle<5)? ( menuHandle===3? "comic-submenu":"animate__animated animate__fadeOut"): ("") }>
+            <div className={(menuHandle>=3 && menuHandle<5)? ( menuHandle===3? "comic-submenu reveal-menu ":"animate__animated animate__fadeOut"): ("") }>
               <div
-                className="submenu-clickable"
+                className="submenu-clickable slit-in-vertical animate__animated animate__delay-4s"
                 onClick={() => setMenuHandle(3.1)}
               >
                 <div className="comic-title">
@@ -51,7 +51,7 @@ const Revelations2 = ({ menuHandle, setMenuHandle }) => {
                 <img className="comic-cover" src={cover1} alt="" />
               </div>
               <div
-                className="submenu-clickable submenu-clickable-reverse"
+                className="submenu-clickable slit-in-vertical submenu-clickable-reverse animate__animated animate__delay-5s"
                 onClick={() => setMenuHandle(3.2)}
               >
                 <div className="comic-title">
@@ -70,7 +70,7 @@ const Revelations2 = ({ menuHandle, setMenuHandle }) => {
           <div className="lineage-wrapper">
             <div
               className="text-box text-box-share text-box-light text-box-2"
-              style={{ height: "375px" , animation: "leftEdgeAnimationShare375 2s forwards"}}
+              style={{ height: "375px"}}
             >
               <h1
                 className="animate__animated focus-in-expand animate__delay-3s"
