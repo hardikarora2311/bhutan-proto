@@ -6,7 +6,7 @@ html {
   margin: 0;
 }
 .main {
-  background-image: url(./assets/map.png);
+  background-image: url(./assets/v2\ Map\ Layout.png);
   background-repeat: repeat-y;
   background-size: contain;
   height: 150vh;
@@ -1211,7 +1211,7 @@ html {
   animation-delay: 0s !important;
 }
 .menu-exit li {
-	animation: slit-out-vertical 0.5s ease-in both;
+	animation: slit-out-vertical 0.3s ease-in both;
 }
 
 @keyframes slit-out-vertical {
@@ -1272,7 +1272,7 @@ html {
 
 
 .date-an-3{
-  animation: bounce-right 0.8s both;
+  animation: bounce-right 12s infinite both;
 }
 
 @keyframes bounce-right {
