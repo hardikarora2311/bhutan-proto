@@ -9,7 +9,7 @@ html {
   background-image: url(./assets/map.png);
   background-repeat: repeat-y;
   background-size: contain;
-  height: 200vh;
+  height: 100vh;
   width: 150vw;
 }
 
