@@ -35,10 +35,10 @@ const Lineage2 = ({menuHandle, fromMenu}) => {
                         <li>SONS</li>
                     </ul>
                     <ul className="sons">
-                        <li className={showone?"clrd-click":""} onClick={() => setShowone(!showone)}>DRAKPA GYALPO</li>
-                        <li className={showtwo?"clrd-click":""} onClick={() => setShowtwo(!showtwo)}>DAWA GYALTSHEN</li>
-                        <li className={showthree?"clrd-click":""} onClick={() => setShowthree(!showthree)}>KUENGA WANGPO</li>
-                        <li  className={showfour?"clrd-click":""} onClick={() => setShowfour(!showfour)}>SANGDA</li>
+                        <li className={showone?"clrd-click":""} onClick={() => {setShowone(!showone); setShowtwo(false); setShowthree(false);setShowfour(false);}}>DRAKPA GYALPO</li>
+                        <li className={showtwo?"clrd-click":""} onClick={() => {setShowtwo(!showtwo); setShowone(false); setShowthree(false);setShowfour(false);}}>DAWA GYALTSHEN</li>
+                        <li className={showthree?"clrd-click":""} onClick={() => {setShowthree(!showthree); setShowtwo(false); setShowone(false);setShowfour(false);}}>KUENGA WANGPO</li>
+                        <li  className={showfour?"clrd-click":""} onClick={() => {setShowfour(!showfour); setShowtwo(false); setShowthree(false);setShowone(false);}}>SANGDA</li>
                     </ul>
                     <ul className="sons choeje">
                         <li className={showone?"son1":"son1 o-hidden-new"}>choeje</li>
