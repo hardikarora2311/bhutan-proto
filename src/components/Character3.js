@@ -24,7 +24,7 @@ const Character3 = ({characterInfo=[]}) => {
         setMenuHandle(0)
     };
     const styles = { 
-        transform: `translate(${characterInfo[4]}px, ${characterInfo[5]}px)` 
+        transform: `translate(${characterInfo[4]}%, ${characterInfo[5]}%)` 
     };
       return (
         <div className="character" style={styles}>
