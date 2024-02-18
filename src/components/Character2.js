@@ -13,15 +13,21 @@ import Revelations2 from './Revelations2';
 const Character2 = ({characterInfo=[]}) => {
   const [charActivate, setCharActivate]= useState(false)
 const [menuHandle, setMenuHandle]= useState(-1)
+const [fromMenu, setFromMenu]= useState(0)
 const characterHandler = () => {
     setCharActivate(!charActivate)
     setMenuHandle(-1)
+    setFromMenu(0)
+
 };
 const menuHandler = () => {
-    setMenuHandle(menuHandle+1)
+    setFromMenu(fromMenu+1)
+    setMenuHandle(menuHandle+1);
+
 };
 const menuReset = () => {
     setMenuHandle(0)
+    setFromMenu(1)
 };
 const styles = { 
     transform: `translate(${characterInfo[4]}%, ${characterInfo[5]}%)` 
@@ -49,9 +55,9 @@ const styles = {
                 <button className= {menuHandle===-1? "home-icon animate__animated roll-in-blurred-right animate__delay-5s":(menuHandle ===0)?"home-icon home-icon-red animate__animated roll-in-blurred-right-home-new animate__delay-5s":(menuHandle %1===0 && menuHandle%2 !==0)?"home-icon home-icon-red animate__animated roll-in-blurred-right animate__delay-5s":(menuHandle %1===0 && menuHandle%2 ===0)?"home-icon home-icon-red animate__animated roll-in-blurred-right-home animate__delay-5s":(menuHandle %1 !==0)?"home-icon animate__animated roll-in-blurred-right animate__delay-5s": "home-icon roll-out-blurred-top-home"} onClick={menuReset}><img src={home} alt="Main Menu" className='animate__animated animate__fadeIn animate__delay-5s'/></button>
                 <Intro2 menuHandle={menuHandle}/>
                 <Menu2 menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
-                <History2 menuHandle={menuHandle}/>
-                <Lineage2 menuHandle={menuHandle}/>
-                <Revelations2 menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
+                <History2 menuHandle={menuHandle} fromMenu={fromMenu}/>
+                <Lineage2 menuHandle={menuHandle} fromMenu={fromMenu}/>
+                <Revelations2 menuHandle={menuHandle} setMenuHandle={setMenuHandle} fromMenu={fromMenu}/>
                 <Legacy menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
                 {/* <button className={(menuHandle===-1)?"next animate__animated animate__fadeIn animate__delay-4s":( menuHandle===1)?"next next-red animate__animated animate__fadeIn animate__delay-4s": "next no-char"} onClick={menuHandler}></button> */}
                 <button className={(menuHandle===-1)?"next roll-in-blurred-left":( menuHandle===1)?"next next-red roll-in-blurred-left": "next roll-out-blurred-top-next"} onClick={menuHandler}></button>

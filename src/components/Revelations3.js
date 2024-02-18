@@ -19,11 +19,33 @@ const PageCover = React.forwardRef((props, ref) => {
       </div>
     );
   });
-const Revelations3 = ({ menuHandle, setMenuHandle }) => {
+const Revelations3 = ({ menuHandle, setMenuHandle , fromMenu}) => {
     if (menuHandle === 3 || menuHandle===4) {
         return (
           <div className="lineage-wrapper">
-            <div
+            {(()=>{
+                    if (fromMenu===1){
+                        return <>
+                      <div
+              className={(menuHandle>=3 && menuHandle<5)? ( menuHandle===3? "text-box text-box-3-his text-box-share text-box-clrd":"text-box text-box-share text-box-3 text-box-clrd  flip-out-hor-top"): ("text-box text-box-share text-box-clrd text-box-3 v-hidden") }>
+              <h1 className="animate__animated slide-right animate__delay-4s">
+                Revelations by pema lingpa
+              </h1>
+              <hr></hr>
+              <p className="animate__animated slide-right animate__delay-5s">
+                Pema Lingpa discovered treasures mainly around Bumthang’s valleys
+                and regions north of its current borders with Tibet. He revealed
+                exclusively physical terma, both texts and relics. In his lifetime,
+                Pema Lingpa was able to reveal only 32 out of 108 termas destined
+                for him. The collection of texts discovered by him, ‘The Precious
+                Collection of Profound Treasure Teachings of the Great Master Pema
+                Lingpa’ consists of 21 volumes.
+              </p>
+            </div>
+                        </>
+                      }else{
+                        return <>
+                        <div
               className={(menuHandle>=3 && menuHandle<5)? ( menuHandle===3? "text-box text-box-3 text-box-share text-box-clrd":"text-box text-box-share text-box-3 text-box-clrd  flip-out-hor-top"): ("text-box text-box-share text-box-clrd text-box-3 v-hidden") }>
               <h1 className="animate__animated slide-right animate__delay-4s">
                 Revelations by pema lingpa
@@ -39,6 +61,10 @@ const Revelations3 = ({ menuHandle, setMenuHandle }) => {
                 Lingpa’ consists of 21 volumes.
               </p>
             </div>
+                    </>
+                      }
+                })()}
+            
             <div className={(menuHandle>=3 && menuHandle<5)? ( menuHandle===3? "comic-submenu":"animate__animated animate__fadeOut"): ("") }>
               <div
                 className="submenu-clickable"

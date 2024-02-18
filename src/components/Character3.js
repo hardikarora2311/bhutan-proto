@@ -13,15 +13,20 @@ import Revelations3 from './Revelations3';
 const Character3 = ({characterInfo=[]}) => {
     const [charActivate, setCharActivate]= useState(false)
     const [menuHandle, setMenuHandle]= useState(-1)
+    const [fromMenu, setFromMenu]= useState(0)
     const characterHandler = () => {
         setCharActivate(!charActivate)
         setMenuHandle(-1)
+        setFromMenu(0)
+        
     };
     const menuHandler = () => {
+        setFromMenu(fromMenu+1)
         setMenuHandle(menuHandle+1)
     };
     const menuReset = () => {
         setMenuHandle(0)
+        setFromMenu(1)
     };
     const styles = { 
         transform: `translate(${characterInfo[4]}%, ${characterInfo[5]}%)` 
@@ -50,8 +55,8 @@ const Character3 = ({characterInfo=[]}) => {
                     <Intro3 menuHandle={menuHandle}/>
                     <Menu3 menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
                     <History3 menuHandle={menuHandle}/>
-                    <Lineage3 menuHandle={menuHandle}/>
-                    <Revelations3 menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
+                    <Lineage3 menuHandle={menuHandle} fromMenu={fromMenu}/>
+                    <Revelations3 menuHandle={menuHandle} setMenuHandle={setMenuHandle} fromMenu={fromMenu}/>
                     <Legacy menuHandle={menuHandle} setMenuHandle={setMenuHandle}/>
                     {/* <button className={(menuHandle===-1)?"next animate__animated animate__fadeIn animate__delay-4s":( menuHandle===1)?"next next-red animate__animated animate__fadeIn animate__delay-4s": "next no-char"} onClick={menuHandler}></button> */}
                     <button className={(menuHandle===-1)?"next flip-2-ver-right-bck":( menuHandle===1)?"next next-red flip-2-ver-right-bck": "next flip-out-ver-right-btn"} onClick={menuHandler}></button>
