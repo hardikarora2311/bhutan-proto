@@ -5,12 +5,13 @@ body,
 html {
   margin: 0;
 }
-.main {
+.main{
   background-image: url(./assets/v2\ Map\ Layout.png);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: contain;
-  height: 150vh;
-  width: 150vw;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 .main-wrapper{
   display: flex;
@@ -28,6 +29,22 @@ html {
   border: 2px solid black;
   cursor: pointer;
   padding: 0.8em 3.5em;
+  transition: all 0.3s ease-in;
+}
+.btns:hover{
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 0.8em 3.5em;
+  background-color: black;
+  color: white;
+}
+
+.btns-active{
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 0.8em 3.5em;
+  background-color: black;
+  color: white;
 }
 .main-wrapper h3{
   padding-left: 1em;
@@ -114,7 +131,7 @@ html {
   transform: translate(81px, 59px);
   /* transform: translate(890px, 459px); */
   font-family: "Josefin Sans", sans-serif;
-  scale: 0.33;
+  scale: 0.15;
 }
 
 .date {
