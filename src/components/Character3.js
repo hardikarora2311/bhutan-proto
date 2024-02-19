@@ -30,7 +30,8 @@ const Character3 = ({characterInfo=[]}) => {
     };
     const styles = { 
         top: `${characterInfo[4]}%`,
-        left: `${characterInfo[5]}%`
+        left: `${characterInfo[5]}%`,
+        rotate: `${characterInfo[6]}deg`
     };
       return (
         <div className="character" style={styles}>
