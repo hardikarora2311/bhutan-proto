@@ -29,7 +29,8 @@ const Character3 = ({characterInfo=[]}) => {
         setFromMenu(1)
     };
     const styles = { 
-        transform: `translate(${characterInfo[4]}%, ${characterInfo[5]}%)` 
+        top: `${characterInfo[4]}%`,
+        left: `${characterInfo[5]}%`
     };
       return (
         <div className="character" style={styles}>

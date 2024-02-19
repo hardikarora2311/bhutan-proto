@@ -24,8 +24,10 @@ const menuHandler = () => {
 const menuReset = () => {
     setMenuHandle(0)
 };
-const styles = { 
-    transform: `translate(${characterInfo[4]}%, ${characterInfo[5]}%)` 
+const styles = {
+    top: `${characterInfo[4]}%`,
+    left: `${characterInfo[5]}%`
+
 };
   return (
     <div className="character" style={styles}>
