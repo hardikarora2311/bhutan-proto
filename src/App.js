@@ -28,12 +28,12 @@ function App() {
   }, []);
   const [variations, setVariations]= useState(1)
   const char1= [1450,1521, image1,"PEMA LINGPA", 58, 60,0]
-  const char2= [800,90, image2,"SUPINE DEMONESS", 80, 3,0]
+  const char2= [800,900, image2,"SUPINE DEMONESS", 80, 3,0]
   const char3= [900,1000, image3,"GURU RINPOCHE", 58, 28,0]
   const char4= [1200,1800, image4,"TIBETAN INFLUX INTO BHUTAN", 80, 42,0]
   const char5= [1594,1651, image5,"ZHABDRUNG NGAWANG NAMGYAL", 80, 80,0]
   const char1opp= [1450,1521, image1,"PEMA LINGPA", 40, 40,180]
-  const char2opp= [800,90, image2,"SUPINE DEMONESS", 15, 95,180]
+  const char2opp= [800,900, image2,"SUPINE DEMONESS", 15, 95,180]
   const char3opp= [900,1000, image3,"GURU RINPOCHE", 40, 70,180]
   const char4opp= [1200,1800, image4,"TIBETAN INFLUX INTO BHUTAN", 15, 62,180]
   const char5opp= [1594,1651, image5,"ZHABDRUNG NGAWANG NAMGYAL", 15, 20,180]
