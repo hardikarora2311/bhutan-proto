@@ -130,6 +130,9 @@ html {
   scale: 0.15;
   transform-origin: 0 0;
 }
+.character-scale{
+  scale: 1;
+}
 
 .date {
   font-size: 260px;
