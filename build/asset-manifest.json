@@ -1,18 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.178c892e.css",
-    "main.js": "/static/js/main.35de12f8.js",
+    "main.css": "/static/css/main.ec566d8a.css",
+    "main.js": "/static/js/main.43b491bb.js",
     "static/js/787.1f9e61ad.chunk.js": "/static/js/787.1f9e61ad.chunk.js",
+    "static/media/v2 Map Layout.png": "/static/media/v2 Map Layout.c499ff20d3e788d1ba7b.png",
+    "static/media/texture-2.jpg": "/static/media/texture-2.735df84c9d7a7a966aa5.jpg",
+    "static/media/Zhabdrung 1.png": "/static/media/Zhabdrung 1.64eb01080864abc3aec7.png",
+    "static/media/Supine Demoness 1.png": "/static/media/Supine Demoness 1.f68fb653f2ef26c19bfa.png",
     "static/media/bg.png": "/static/media/bg.176203be489485dd09b3.png",
-    "static/media/Pema Lingpa 2.png": "/static/media/Pema Lingpa 2.f2408019152ff1f83939.png",
+    "static/media/Guru Rinpoche 1.png": "/static/media/Guru Rinpoche 1.c80d0e83416722dd3db2.png",
+    "static/media/Tibetan Movement 1.png": "/static/media/Tibetan Movement 1.05b0ea0372052f4a9c92.png",
+    "static/media/texture-1.jpg": "/static/media/texture-1.b0e077b8d65c8f1d278d.jpg",
+    "static/media/Photo Gallery.png": "/static/media/Photo Gallery.cb51650c68b4589963f0.png",
+    "static/media/Pema Lingpa 2.png": "/static/media/Pema Lingpa 2.50d67e8f730049606094.png",
+    "static/media/A3_6 (1).png": "/static/media/A3_6 (1).70871477cffe6feaf904.png",
+    "static/media/A3_6.png": "/static/media/A3_6.52bda335630c3976772b.png",
+    "static/media/A3_5 (1).png": "/static/media/A3_5 (1).56951bdf8a6b64756283.png",
+    "static/media/A3_5.png": "/static/media/A3_5.555eb1ed6220bfc9625e.png",
     "static/media/Kenchosum-Lhakhang.png": "/static/media/Kenchosum-Lhakhang.dd8596d2bb79525e1e74.png",
+    "static/media/Kunzangdrak,_Bumthang.png": "/static/media/Kunzangdrak,_Bumthang.14b5a37e5abffa1619cc.png",
+    "static/media/Comic Book Cover-2.png": "/static/media/Comic Book Cover-2.5028816fd450522072d5.png",
+    "static/media/Comic Book Cover-1.png": "/static/media/Comic Book Cover-1.12d7f9f2487501272159.png",
+    "static/media/Burning Lake Cover Image.png": "/static/media/Burning Lake Cover Image.ae149d085dfa841d261f.png",
+    "static/media/Naring Drag Cover Image.png": "/static/media/Naring Drag Cover Image.1a189f6dc633a5db646e.png",
     "index.html": "/index.html",
-    "main.178c892e.css.map": "/static/css/main.178c892e.css.map",
-    "main.35de12f8.js.map": "/static/js/main.35de12f8.js.map",
+    "main.ec566d8a.css.map": "/static/css/main.ec566d8a.css.map",
+    "main.43b491bb.js.map": "/static/js/main.43b491bb.js.map",
     "787.1f9e61ad.chunk.js.map": "/static/js/787.1f9e61ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.178c892e.css",
-    "static/js/main.35de12f8.js"
+    "static/css/main.ec566d8a.css",
+    "static/js/main.43b491bb.js"
   ]
 }
